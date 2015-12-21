@@ -32,8 +32,3 @@ function! s:RunStylishHaskell()
     echom errors
   endif
 endfunction
-
-augroup stylish-haskell
-  autocmd!
-  autocmd BufWritePost *.hs call s:StylishHaskell()
-augroup END
