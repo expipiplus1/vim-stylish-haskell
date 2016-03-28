@@ -11,7 +11,7 @@ function! s:OverwriteBuffer(output)
   call winrestview(winview)
 endfunction
 
-function! s:StylishHaskell()
+function! StylishHaskell()
   if executable(g:stylish_haskell_command)
     call s:RunStylishHaskell()
   elseif !exists("s:exec_warned")
